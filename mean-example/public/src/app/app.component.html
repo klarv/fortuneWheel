@@ -1,0 +1,31 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <a class="navbar-brand" href="#">Logo</a>
+    <ul class="navbar-nav">
+      <li *ngFor="let b of brands"><a routerLink="/prizes/{{b}}">{{b}}</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Modal -->
+<div id="logsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Logs History</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
