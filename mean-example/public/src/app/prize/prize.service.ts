@@ -18,7 +18,7 @@ export class PrizeService {
       .map(data => data.json()).toPromise()
   }
 
-  detroy(prize: Prize) {
+  destroy(prize: Prize) {
     return this._http.delete('/prizes/' + prize._id)
     .map(data => data.json()).toPromise()
   }
@@ -26,11 +26,6 @@ export class PrizeService {
   update(prize: Prize) {
     return this._http.put('/prizes/' + prize._id, prize)
     .map(data => data.json()).toPromise()
-  }
-
-  listBrand(prize: Prize) {
-      return this._http.put('/prizes/' + prize.brand_name, prize)
-          .map(data => data.json()).toPromise()
   }
 
   getPrizes() {

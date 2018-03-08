@@ -1,11 +1,14 @@
-<div class="container">
-  <nav class="navbar navbar-expand-sm sticky-top">
-    <a class="navbar-brand" href="#">Logo</a>
-    <ul class="navbar-nav">
-      <li *ngFor="let b of brands"><a routerLink="/prizes/{{b}}">{{b}}</a></li>
-    </ul>
+<div class="container-fluid">
+  <nav class="navbar justify-content-center navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Fortune Wheel</a>
+      <ul class="nav navbar-nav">
+        <li *ngFor="let b of brands" class="nav-item"><a routerLink="/prizes/{{b}}" class="nav-link">{{b}}</a></li>
+      </ul>
+    </div>
   </nav>
 </div>
+
 <div class="container">
   <router-outlet></router-outlet>
 </div>

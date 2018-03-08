@@ -24,6 +24,7 @@ li.tab-brand a {
 .prize-form {
   border: 2px solid #ddd;
   margin-top: 25px;
+  padding-bottom: 55px;
 }
 
 .prize-form h3 {
@@ -78,4 +79,17 @@ li.tab-brand a {
 
 .table-bordered {
   border: 2px solid #ddd;
+}
+
+a.navbar-brand, a.nav-link {
+  color: #fff;
+}
+
+  a.navbar-brand:hover, a.nav-link:hover, a.navbar-brand:focus, a.nav-link:focus, a.navbar-brand:active, a.nav-link:active {
+    color: #ccc;
+    background: none;
+  }
+
+.btn-primary {
+  margin-left: 25%;
 }

@@ -17,28 +17,10 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <nav class=\"navbar navbar-expand-sm sticky-top\">\r\n    <a class=\"navbar-brand\" href=\"#\">Logo</a>\r\n    <ul class=\"navbar-nav\">\r\n      <li *ngFor=\"let b of brands\"><a routerLink=\"/prizes/{{b}}\">{{b}}</a></li>\r\n    </ul>\r\n  </nav>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n\r\n<!-- Modal -->\r\n<div id=\"logsModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Logs History</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <nav class=\"navbar justify-content-center navbar-expand-lg navbar-dark bg-primary\">\r\n    <div class=\"container\">\r\n      <a class=\"navbar-brand\" href=\"#\">Fortune Wheel</a>\r\n      <ul class=\"nav navbar-nav\">\r\n        <li *ngFor=\"let b of brands\" class=\"nav-item\"><a routerLink=\"/prizes/{{b}}\" class=\"nav-link\">{{b}}</a></li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</div>\r\n\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n\r\n<!-- Modal -->\r\n<div id=\"logsModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Logs History</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -65,7 +47,7 @@ AppComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/app.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/prize/css/layout.css")]
     })
 ], AppComponent);
 
@@ -172,7 +154,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".h1, h1 {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n  font-size: 40px;\r\n  color: #ef520d;\r\n  font-weight: bold;\r\n  margin-bottom: 25px;\r\n}\r\n\r\n.tab-content {\r\n  border-top: 5px solid #337AB7;\r\n}\r\n\r\nli.tab-brand a {\r\n  font-weight: bold;\r\n  font-size: 20px;\r\n}\r\n\r\n.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {\r\n  color: #fff;\r\n  background-color: #337ab7;\r\n  border-radius: 8px 8px 0 0;\r\n}\r\n\r\n.prize-form {\r\n  border: 2px solid #ddd;\r\n  margin-top: 25px;\r\n}\r\n\r\n.prize-form h3 {\r\n  background: #ccc;\r\n  color: #fff;\r\n  padding: 8px;\r\n}\r\n\r\n.slidecontainer {\r\n  width: 100%;\r\n}\r\n\r\n.slider {\r\n  -webkit-appearance: none;\r\n  width: 100%;\r\n  height: 15px;\r\n  border-radius: 5px;\r\n  background: #d3d3d3;\r\n  outline: none;\r\n  opacity: 0.7;\r\n  transition: opacity .2s;\r\n}\r\n\r\n  .slider:hover {\r\n    opacity: 1;\r\n  }\r\n\r\n  .slider::-webkit-slider-thumb {\r\n    -webkit-appearance: none;\r\n    appearance: none;\r\n    width: 25px;\r\n    height: 25px;\r\n    border-radius: 50%;\r\n    background: #4CAF50;\r\n    cursor: pointer;\r\n  }\r\n\r\n  .slider::-moz-range-thumb {\r\n    width: 25px;\r\n    height: 25px;\r\n    border-radius: 50%;\r\n    background: #4CAF50;\r\n    cursor: pointer;\r\n  }\r\n\r\n.table {\r\n  width: 100%;\r\n  max-width: 100%;\r\n  margin: 25px;\r\n}\r\n\r\n.table-bordered {\r\n  border: 2px solid #ddd;\r\n}\r\n", ""]);
+exports.push([module.i, ".h1, h1 {\r\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n  font-size: 40px;\r\n  color: #ef520d;\r\n  font-weight: bold;\r\n  margin-bottom: 25px;\r\n}\r\n\r\n.tab-content {\r\n  border-top: 5px solid #337AB7;\r\n}\r\n\r\nli.tab-brand a {\r\n  font-weight: bold;\r\n  font-size: 20px;\r\n}\r\n\r\n.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {\r\n  color: #fff;\r\n  background-color: #337ab7;\r\n  border-radius: 8px 8px 0 0;\r\n}\r\n\r\n.prize-form {\r\n  border: 2px solid #ddd;\r\n  margin-top: 25px;\r\n  padding-bottom: 55px;\r\n}\r\n\r\n.prize-form h3 {\r\n  background: #ccc;\r\n  color: #fff;\r\n  padding: 8px;\r\n}\r\n\r\n.slidecontainer {\r\n  width: 100%;\r\n}\r\n\r\n.slider {\r\n  -webkit-appearance: none;\r\n  width: 100%;\r\n  height: 15px;\r\n  border-radius: 5px;\r\n  background: #d3d3d3;\r\n  outline: none;\r\n  opacity: 0.7;\r\n  transition: opacity .2s;\r\n}\r\n\r\n  .slider:hover {\r\n    opacity: 1;\r\n  }\r\n\r\n  .slider::-webkit-slider-thumb {\r\n    -webkit-appearance: none;\r\n    appearance: none;\r\n    width: 25px;\r\n    height: 25px;\r\n    border-radius: 50%;\r\n    background: #4CAF50;\r\n    cursor: pointer;\r\n  }\r\n\r\n  .slider::-moz-range-thumb {\r\n    width: 25px;\r\n    height: 25px;\r\n    border-radius: 50%;\r\n    background: #4CAF50;\r\n    cursor: pointer;\r\n  }\r\n\r\n.table {\r\n  width: 100%;\r\n  max-width: 100%;\r\n  margin: 25px;\r\n}\r\n\r\n.table-bordered {\r\n  border: 2px solid #ddd;\r\n}\r\n\r\na.navbar-brand, a.nav-link {\r\n  color: #fff;\r\n}\r\n\r\n  a.navbar-brand:hover, a.nav-link:hover, a.navbar-brand:focus, a.nav-link:focus, a.navbar-brand:active, a.nav-link:active {\r\n    color: #ccc;\r\n    background: none;\r\n  }\r\n", ""]);
 
 // exports
 
@@ -422,7 +404,7 @@ PrizeListComponent = __decorate([
 /***/ "../../../../../src/app/prize/prize-new/prize-new.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"prize-form\">\r\n  <h3>Prizes List</h3>\r\n  <form (submit)=\"create()\" class=\"form-horizontal\">\r\n      <div class=\"form-group\">\r\n        <label class=\"control-label col-sm-4\" for=\"brand_name\">Prize Type:</label>\r\n        <div class=\"col-sm-8\">\r\n          <select name=\"brand_name\" [(ngModel)]=\"newPrize.brand_name\">\r\n            <option *ngFor=\"let b of brands\" [value]=\"b\">{{b}}</option>\r\n          </select>\r\n        </div>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label class=\"control-label col-sm-4\" for=\"prize_value\">Prize Type:</label>\r\n        <div class=\"col-sm-8\">\r\n          <input class=\"form-control\" type=\"text\" name=\"prize_value\" [(ngModel)]=\"newPrize.prize_value\">\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"form-group\">\r\n        <label class=\"control-label col-sm-4\" for=\"prize_type\">Prize Type:</label>\r\n        <div class=\"col-sm-4\" *ngFor=\"let t of types\">\r\n          <input type=\"radio\" name=\"prize_type\" [value]=\"t\" [(ngModel)]=\"newPrize.prize_type\"> {{t}}\r\n        </div>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"prize_probability\" class=\"control-label col-sm-4\">Prize Probability:</label>\r\n        <div class=\"col-sm-8\">\r\n          <div class=\"slidecontainer\">\r\n            <input type=\"range\" class=\"slider\" name=\"prize_probability\" min=\"0\" max=\"1\" step=\"0.1\" [(ngModel)]=\"newPrize.prize_probability\">\r\n            {{newPrize.prize_probability}}\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"prize_spots\" class=\"control-label col-sm-4\">Prize Spots Number:</label>\r\n        <div class=\"col-sm-8\">\r\n          <input type=\"number\" name=\"prize_spots\" min=\"0\" max=\"100\" [(ngModel)]=\"newPrize.prize_spots\">\r\n        </div>\r\n      </div>\r\n\r\n      <button class=\"btn btn-primary\" type=\"submit\">\r\n        Send\r\n      </button>\r\n    </form>\r\n</div>\r\n"
+module.exports = "<div class=\"prize-form\">\r\n  <h3>Create New Prize</h3>\r\n  <form (submit)=\"create()\" class=\"form-horizontal\">\r\n      <div class=\"form-group\">\r\n        <label class=\"control-label col-sm-4\" for=\"brand_name\">Prize Type:</label>\r\n        <div class=\"col-sm-8\">\r\n          <select name=\"brand_name\" [(ngModel)]=\"newPrize.brand_name\">\r\n            <option *ngFor=\"let b of brands\" [value]=\"b\">{{b}}</option>\r\n          </select>\r\n        </div>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label class=\"control-label col-sm-4\" for=\"prize_value\">Prize Type:</label>\r\n        <div class=\"col-sm-8\">\r\n          <input class=\"form-control\" type=\"text\" name=\"prize_value\" [(ngModel)]=\"newPrize.prize_value\">\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"form-group\">\r\n        <label class=\"control-label col-sm-4\" for=\"prize_type\">Prize Type:</label>\r\n        <div class=\"col-sm-4\" *ngFor=\"let t of types\">\r\n          <input type=\"radio\" name=\"prize_type\" [value]=\"t\" [(ngModel)]=\"newPrize.prize_type\"> {{t}}\r\n        </div>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"prize_probability\" class=\"control-label col-sm-4\">Prize Probability:</label>\r\n        <div class=\"col-sm-8\">\r\n          <div class=\"slidecontainer\">\r\n            <input type=\"range\" class=\"slider\" name=\"prize_probability\" min=\"0\" max=\"1\" step=\"0.1\" [(ngModel)]=\"newPrize.prize_probability\">\r\n            {{newPrize.prize_probability}}\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"prize_spots\" class=\"control-label col-sm-4\">Prize Spots Number:</label>\r\n        <div class=\"col-sm-8\">\r\n          <input type=\"number\" name=\"prize_spots\" min=\"0\" max=\"100\" [(ngModel)]=\"newPrize.prize_spots\">\r\n        </div>\r\n      </div>\r\n      <button class=\"btn btn-primary col-sm-12\" type=\"submit\">\r\n        Add New Prize\r\n      </button>\r\n</form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -523,19 +505,13 @@ var PrizeComponent = (function () {
     };
     PrizeComponent.prototype.destroy = function (prize) {
         var _this = this;
-        this._prizeService.detroy(prize)
+        this._prizeService.destroy(prize)
             .then(function (status) { return _this.getPrizes(); })
             .catch(function (err) { return console.log(err); });
     };
     PrizeComponent.prototype.update = function (prize) {
         var _this = this;
         this._prizeService.update(prize)
-            .then(function (status) { return _this.getPrizes(); })
-            .catch(function (err) { return console.log(err); });
-    };
-    PrizeComponent.prototype.listBrand = function (prize) {
-        var _this = this;
-        this._prizeService.getPrizes()
             .then(function (status) { return _this.getPrizes(); })
             .catch(function (err) { return console.log(err); });
     };
@@ -584,16 +560,12 @@ var PrizeService = (function () {
         return this._http.post('/prizes', prize)
             .map(function (data) { return data.json(); }).toPromise();
     };
-    PrizeService.prototype.detroy = function (prize) {
+    PrizeService.prototype.destroy = function (prize) {
         return this._http.delete('/prizes/' + prize._id)
             .map(function (data) { return data.json(); }).toPromise();
     };
     PrizeService.prototype.update = function (prize) {
         return this._http.put('/prizes/' + prize._id, prize)
-            .map(function (data) { return data.json(); }).toPromise();
-    };
-    PrizeService.prototype.listBrand = function (prize) {
-        return this._http.put('/prizes/' + prize.brand_name, prize)
             .map(function (data) { return data.json(); }).toPromise();
     };
     PrizeService.prototype.getPrizes = function () {
